@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateImagesTable extends Migration
+class CreateCeremoniesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class CreateImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('images', function (Blueprint $table) {
+        Schema::create('ceremonies', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->date("date");
-            $table->string("fichier");
+            $table->date("date_debut");
+            $table->time("heure_debut");
+            $table->date("date_fin");
+            $table->time("heure_fin");
+            $table->string("objet_ceremonie");
             $table->timestamps();
         });
     }
@@ -28,6 +31,6 @@ class CreateImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('images');
+        Schema::dropIfExists('ceremonies');
     }
 }

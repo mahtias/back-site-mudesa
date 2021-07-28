@@ -72,18 +72,18 @@ Route::group([
 
 
     // ///
-    // Route::get('transport','MoyenTransportController@index');
-    // Route::get('transport/{id}', 'MoyenTransportController@show');
-    // Route::post('transport', 'MoyenTransportController@store');
-    // Route::put('transport/{id}', 'MoyenTransportController@update');
-    //  Route::delete('transport/{id}', 'MoyenTransportController@destroy');
+    Route::get('ceremonie','ceremonieController@index');
+    Route::get('ceremonie/{id}', 'ceremonieController@show');
+    Route::post('ceremonie', 'ceremonieController@store');
+    Route::put('ceremonie/{id}', 'ceremonieController@update');
+     Route::delete('ceremonie/{id}', 'ceremonieController@destroy');
 
     //  ///
-    //   Route::get('norme', 'NormeMissionController@index');
-    // Route::get('norme/{id}', 'NormeMissionController@show');
-    // Route::post('norme', 'NormeMissionController@store');
-    // Route::put('norme/{id}', 'NormeMissionController@update');
-    // Route::delete('norme/{id}', 'NormeMissionController@destroy');
+      Route::get('org', 'orgSocioController@index');
+    Route::get('org/{id}', 'orgSocioController@show');
+    Route::post('org', 'orgSocioController@store');
+    Route::put('org/{id}', 'orgSocioController@update');
+    Route::delete('org/{id}', 'orgSocioController@destroy');
 
 
     ///
@@ -93,19 +93,19 @@ Route::group([
     Route::put('role/{id}', 'RoleController@update');
      Route::delete('role/{id}', 'RoleController@destroy');
      
-    // Route::get('pays', 'PaysController@index');
-    // Route::get('pays/{id}', 'PaysController@show');
-    // Route::post('pays', 'PaysController@store');
-    // Route::put('pays/{id}', 'PaysController@update');
-    // Route::delete('pays/{id}', 'PaysController@destroy');
+    Route::get('image', 'ImageController@index');
+    Route::get('image/{id}', 'ImageController@show');
+    Route::post('image', 'ImageController@store');
+    Route::put('image/{id}', 'ImageController@update');
+    Route::delete('image/{id}', 'ImageController@destroy');
 
 
 //     ///
-//     Route::get('plan','PlanPaysController@index');
-//     Route::get('plan/{id}', 'PlanPaysController@show');
-//     Route::post('plan', 'PlanPaysController@store');
-//     Route::put('plan/{id}', 'PlanPaysController@update');
-//      Route::delete('plan/{id}', 'PlanPaysController@destroy');
+    Route::get('video','VideoController@index');
+    Route::get('video/{id}', 'VideoController@show');
+    Route::post('video', 'VideoController@store');
+    Route::put('video/{id}', 'VideoController@update');
+     Route::delete('video/{id}', 'VideoController@destroy');
 
 //       Route::get('typeMission','TypeMissionController@index');
 //     Route::get('typeMission/{id}', 'TypeMissionController@show');

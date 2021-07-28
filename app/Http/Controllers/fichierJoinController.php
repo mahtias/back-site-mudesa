@@ -107,7 +107,8 @@ class fichierJoinController extends Controller
             $resultat->fichier_join=$fichier;
         }
 
-        
+          $resultat->date_rapport=$request->get("date_rapport");
+        $resultat->heure_rapport=$request->get("heure_rapport");
         $resultat->save();
         return response()->json($resultat, 201);
     }

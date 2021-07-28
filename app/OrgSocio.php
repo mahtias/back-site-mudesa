@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Image extends Model
+class OrgSocio extends Model
 {
     //
-    protected $table = 'images';
+    protected $table = 'org_socios';
 
     public $timestamps = false;
 
