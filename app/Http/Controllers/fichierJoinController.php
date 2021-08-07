@@ -91,7 +91,7 @@ class fichierJoinController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
         //
         $resultat=fichier_joint::find($request->input("id"));
@@ -107,8 +107,8 @@ class fichierJoinController extends Controller
             $resultat->fichier_join=$fichier;
         }
 
-          $resultat->date_rapport=$request->get("date_rapport");
-        $resultat->heure_rapport=$request->get("heure_rapport");
+          $resultat->date_rapport=$request->input("date_rapport");
+        $resultat->heure_rapport=$request->input("heure_rapport");
         $resultat->save();
         return response()->json($resultat, 201);
     }

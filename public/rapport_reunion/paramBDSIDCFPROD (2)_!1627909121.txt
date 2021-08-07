@@ -1,0 +1,28 @@
+***********lien DB serveur original***************
+
+lien:http://192.168.1.25/phpmyadmin/
+pb6ad_sidcf
+225agosoft2021*
+
+
+Lien BD :https://h2-phpmyadmin.infomaniak.com/
+BD -> serveur :4w30a.myd.infomaniak.com
+            username :4w30a_dinodzo003
+            password :4783011447agosoft
+
+FTP -> host :4w30a.ftp.infomaniak.com
+              username: 4w30a_agosoft
+            password:  Agosoft2021 
+
+64963248540
+
+
+ 
+
+serve : pb6ad.myd.infomaniak.com
+
+user : pb6ad_testdcf
+
+Mot passe: 225agosoft2021
+
+

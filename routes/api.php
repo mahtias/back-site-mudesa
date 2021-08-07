@@ -67,7 +67,7 @@ Route::group([
     Route::get('fichier', 'fichierJoinController@index');
     Route::get('fichier/{id}', 'fichierJoinController@show');
     Route::post('fichier', 'fichierJoinController@store');
-    Route::put('fichier/{id}', 'fichierJoinController@update');
+    Route::post('fichier', 'fichierJoinController@update');
     Route::delete('fichier/{id}', 'fichierJoinController@destroy');
 
 
